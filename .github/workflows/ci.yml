@@ -23,7 +23,7 @@ jobs:
           echo "scripts directory exists."
         else
           echo "scripts directory does not exist, skipping ShellCheck."
-          exit 78
+          exit 0
         fi
       shell: bash
 

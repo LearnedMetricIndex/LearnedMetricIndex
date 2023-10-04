@@ -316,7 +316,7 @@ if __name__ == "__main__":
     parser.add_argument("--lr", nargs="+", default=[0.01], type=float)
     parser.add_argument("-b", "--n-buckets", nargs="+", default=[2, 3, 4], type=int)
     parser.add_argument(
-        "-bp", "--buckets-perc", nargs="+", default=[1, 2, 3, 4, 5], type=int
+        "-bp", "--buckets-perc", nargs="+", default=[10], type=int
     )
     parser.add_argument("--preprocess", default=True, type=bool)
     parser.add_argument("--save", default=True, type=bool)
