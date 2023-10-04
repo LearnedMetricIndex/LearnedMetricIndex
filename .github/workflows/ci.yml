@@ -17,12 +17,23 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
+    - name: Check if 'scripts' directory exists
+      run: |
+        if [ -d "scripts" ]; then
+          echo "scripts directory exists."
+        else
+          echo "scripts directory does not exist, skipping ShellCheck."
+          exit 78
+        fi
+      shell: bash
+
     - name: Install ShellCheck
       run: |
         sudo apt-get update -q && sudo apt-get install -yq shellcheck
       shell: bash
 
     - name: Check shell scripts
+      if: ${{ hashFiles('assets/') != '' }}
       run: |
         shellcheck scripts/*.sh
         shellcheck scripts/core/*.sh
@@ -44,7 +55,7 @@ jobs:
 
     - name: Check code formatting with Black
       run: |
-        black --check search/**/*.py
+        black -v --check .
       shell: bash
 
   flake8:
@@ -58,7 +69,7 @@ jobs:
 
     - name: Install Flake8
       run: |
-        pip install flake8==0.12.0
+        pip install flake8==6.1.0
       shell: bash
 
     - name: Check code with Flake8

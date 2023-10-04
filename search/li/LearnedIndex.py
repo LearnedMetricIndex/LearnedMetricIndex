@@ -108,13 +108,7 @@ class LearnedIndex(Logger):
             self.logger.debug(
                 f"Searching in bucket {bucket_order_idx + 1} out of {n_buckets}"
             )
-            (
-                dists,
-                anns,
-                t_all,
-                t_seq_search,
-                t_sort,
-            ) = self._search_single_bucket(
+            (dists, anns, t_all, t_seq_search, t_sort) = self._search_single_bucket(
                 data_navigation=data_navigation,
                 data_search=data_search,
                 queries_search=queries_search,

@@ -2,7 +2,7 @@ import logging
 
 
 def get_logger_config() -> str:
-    return '[%(asctime)s][%(levelname)-5.5s][%(name)-.20s] %(message)s'
+    return "[%(asctime)s][%(levelname)-5.5s][%(name)-.20s] %(message)s"
 
 
 def remove_logger_handlers():
@@ -10,7 +10,7 @@ def remove_logger_handlers():
         logging.root.removeHandler(handler)
 
 
-class Logger():
+class Logger:
     @property
     def logger(self, level=logging.INFO):
         component = "{}.{}".format(type(self).__module__, type(self).__name__)
