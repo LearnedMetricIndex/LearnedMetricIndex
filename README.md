@@ -87,6 +87,6 @@ python3 eval/plot.py res.csv
 ## Team
 - [Terézia Slanináková](https://github.com/TerkaSlan), Masaryk University
 - [David Procházka](https://github.com/ProchazkaDavid), Masaryk University
-- Jaroslav Oľha, Masaryk University
+- [Jaroslav Oľha](https://github.com/JaroOlha), Masaryk University
 - Matej Antol, Masaryk University
 - [Vlastislav Dohnal](https://github.com/dohnal), Masaryk University
