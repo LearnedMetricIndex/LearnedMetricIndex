@@ -79,10 +79,6 @@ python3 eval/plot.py res.csv
 > J. Ol'ha, T. Slanináková, M. Gendiar, M. Antol, V. Dohnal: [Learned Indexing in Proteins: Extended Work on Substituting Complex Distance Calculations with Embedding and Clustering Techniques
 ](https://arxiv.org/abs/2208.08910), and [Learned Indexing in Proteins: Substituting Complex Distance Calculations with Embedding and Clustering Techniques](https://link.springer.com/chapter/10.1007/978-3-031-17849-8_22) SISAP 2022 - Similarity Search and Applications pp 274-282 (2022)
 
-**"LMI in Proteins" (2022):**
-> J. Ol'ha, T. Slanináková, M. Gendiar, M. Antol, V. Dohnal: [Learned Indexing in Proteins: Extended Work on Substituting Complex Distance Calculations with Embedding and Clustering Techniques
-](https://arxiv.org/abs/2208.08910), and [Learned Indexing in Proteins: Substituting Complex Distance Calculations with Embedding and Clustering Techniques](https://link.springer.com/chapter/10.1007/978-3-031-17849-8_22) SISAP 2022 - Similarity Search and Applications pp 274-282 (2022)
-
 **"Reproducible LMI" (2023):**
 - [**Repository**](https://github.com/TerkaSlan/LMIF)
 - [**Mendeley data**](https://data.mendeley.com/datasets/8wp73zxr47/12)
