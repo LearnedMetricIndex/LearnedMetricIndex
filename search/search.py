@@ -50,6 +50,7 @@ def prepare(kind, size):
 
 def store_results(dst, algo, kind, dists, anns, buildtime, querytime, params, size):
     os.makedirs(Path(dst).parent, exist_ok=True)
+    LOG.info(f"Storing results in {dst}")
     f = h5py.File(dst, "w")
     f.attrs["algo"] = algo
     f.attrs["data"] = kind
